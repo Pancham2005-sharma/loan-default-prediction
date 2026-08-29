@@ -19,6 +19,7 @@ The model was trained on the Kaggle Loan Default Dataset (148,670 records).
 - **XGBoost selected** as the final model (89.8% accuracy, 0.895 ROC-AUC, 0.65 recall on defaults)
 
 ## Folder Structure
+'''
 loan-default-app/
 │
 ├── app.py
@@ -33,6 +34,7 @@ loan-default-app/
 │ └── README.txt
 ├── requirements.txt
 └── README.md
+'''
 
 
 ## Setup & Running Locally
