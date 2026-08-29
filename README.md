@@ -21,14 +21,14 @@ The model was trained on the Kaggle Loan Default Dataset (148,670 records).
 ## Folder Structure
 loan-default-app/
 │
-├── app.py # Main Streamlit application
+├── app.py
 ├── model/
-│ ├── loan_model.pkl # Trained XGBoost model
-│ ├── scaler.pkl # StandardScaler (fit during training)
-│ ├── loan_default_columns.pkl # Exact column order the model expects
-│ └── loan_default_categorical_options.pkl # Valid values for each dropdown
+│ ├── loan_model.pkl
+│ ├── scaler.pkl
+│ ├── loan_default_columns.pkl
+│ └── loan_default_categorical_options.pkl
 ├── utils/
-│ └── preprocessing.py # Rebuilds a model-ready row from form inputs
+│ └── preprocessing.py
 ├── data/
 │ └── README.txt
 ├── requirements.txt
