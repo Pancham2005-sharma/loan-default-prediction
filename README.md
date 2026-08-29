@@ -19,22 +19,19 @@ The model was trained on the Kaggle Loan Default Dataset (148,670 records).
 - **XGBoost selected** as the final model (89.8% accuracy, 0.895 ROC-AUC, 0.65 recall on defaults)
 
 ## Folder Structure
-'''
-loan-default-app/
-│
-├── app.py
-├── model/
-│ ├── loan_model.pkl
-│ ├── scaler.pkl
-│ ├── loan_default_columns.pkl
-│ └── loan_default_categorical_options.pkl
-├── utils/
-│ └── preprocessing.py
-├── data/
-│ └── README.txt
-├── requirements.txt
-└── README.md
-'''
+
+- **app.py** — Main Streamlit application
+- **model/**
+  - loan_model.pkl — Trained XGBoost model
+  - scaler.pkl — StandardScaler (fit during training)
+  - loan_default_columns.pkl — Exact column order the model expects
+  - loan_default_categorical_options.pkl — Valid values for each dropdown
+- **utils/**
+  - preprocessing.py — Rebuilds a model-ready row from form inputs
+- **data/**
+  - README.txt
+- **requirements.txt**
+- **README.md**
 
 
 ## Setup & Running Locally
